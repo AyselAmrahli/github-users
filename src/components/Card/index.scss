@@ -1,0 +1,10 @@
+@use '../../assets/sass/main' as M;
+@use '../../assets/sass/colors' as C;
+
+.card {
+  padding: M.$space-s;
+  margin: M.$space-s 0;
+  background-color: C.$dark-black;
+  color: C.$light-gray;
+  border-radius: M.$radius-m;
+}

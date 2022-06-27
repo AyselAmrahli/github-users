@@ -1,0 +1,7 @@
+@use '../../../assets/sass/main' as M;
+
+  .list_item {
+    font-size: M.$font-size-s;
+    display: block;
+    margin-bottom: M.$space-xs;
+  }

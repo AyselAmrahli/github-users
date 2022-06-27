@@ -1,0 +1,7 @@
+@use '../../assets/sass/main' as M;
+
+.container {
+  padding: 0 M.$space-m;
+  margin: 0 auto;
+  max-width: 768px;
+}

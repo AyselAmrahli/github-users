@@ -1,3 +1,6 @@
+@use './assets/sass/main' as M;
+@use './assets/sass/colors' as C;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,4 +8,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: C.$light-black;
+}
+
+p,span,h2 {
+  color: C.$light-gray;
+}
+
+.page {
+  padding: M.$space-m 0;
+}
+
+.flex-justify-center {
+  @include M.flex-center;
+  justify-content: center;
+}
+
+.flex-justify-between {
+  @include M.flex-center;
+  justify-content: space-between;
+}
+
+.see-more {
+  color: C.$green;
+  font-size: M.$font-size-m;
+}
+
+.user-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.list_item > label {
+  margin-right: M.$space-m;
+  display: inline-block;
+  min-width: 200px;
 }

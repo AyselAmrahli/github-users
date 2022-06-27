@@ -1,0 +1,24 @@
+// ***** sizes **** //
+$font-size-s: 14px;
+$font-size-m: 18px;
+
+// **** radiuses **** //
+$radius-m: 8px;
+
+// **** opacity **** //
+$opacity: .5;
+
+// **** spaces **** //
+$space-xs: 10px;
+$space-s: 30px;
+$space-m: 40px;
+$space-l: 70px;
+
+// *** height *** //
+$height-field: 47px;
+
+// ***** mixins **** //
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+}

@@ -1,0 +1,7 @@
+@use '../../assets/sass/colors' as C;
+
+.header {
+  text-align: center;
+  color: C.$light-gray;
+  border-bottom: 1px solid C.$light-gray;
+}

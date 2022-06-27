@@ -1,0 +1,22 @@
+@use '../../assets/sass/main' as M;
+@use '../../assets/sass/colors' as C;
+
+.search {
+  min-width: 464px;
+  height: M.$height-field;;
+  background-color: C.$dark-black;
+  border: 1px solid C.$light-gray;
+  border-radius: M.$radius-m;
+  margin-right: M.$space-s;
+
+  input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: C.$light-gray;
+    padding-right: M.$space-l;
+    padding-left: M.$space-s;
+    height: 100%;
+    width: 100%;
+  }
+}
