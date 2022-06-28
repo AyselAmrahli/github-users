@@ -5,9 +5,9 @@ import './index.scss';
 
 const Header: FC = () => {
 	return (
-		<header className="header">
+		<header className="header" data-testid="data-header">
 			<Container>
-        <h4>Github Users</h4>
+        <h4 data-testid="data-header-content">Github Users</h4>
       </Container>
 		</header>
 	)

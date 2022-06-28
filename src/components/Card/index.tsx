@@ -4,11 +4,12 @@ import './index.scss';
 
 type IProps = {
 	children?: ReactNode | ReactElement,
+	dataTest?: string;
 }
 
-const Card: FC<IProps> = ({children}) => {
+const Card: FC<IProps> = ({children, dataTest='data-card'}) => {
 	return (
-		<div className="card">
+		<div className="card" data-testid={dataTest}>
 			{children}
 		</div>
 	)

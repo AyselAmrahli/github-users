@@ -6,9 +6,10 @@ type IProps = {
 	placeholder?: string,
 	defaultValue?: string,
 	onChange: any,
+	dataTest?: string;
 }
 
-const SearchField: FC<IProps> = ({placeholder = 'Search', defaultValue, onChange}) => {
+const SearchField: FC<IProps> = ({placeholder = 'Search', defaultValue, onChange, dataTest='data-search-input'}) => {
 	return (
 		<div className="search">
 			<input
@@ -16,6 +17,7 @@ const SearchField: FC<IProps> = ({placeholder = 'Search', defaultValue, onChange
 				value={defaultValue}
 				placeholder={placeholder}
 				onChange={(e:React.ChangeEvent<HTMLInputElement>) => onChange(e.target.value)}
+				data-testid={dataTest}
 			/>
 		</div>
 	)

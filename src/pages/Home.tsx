@@ -34,16 +34,18 @@ const Home: FC = () => {
             placeholder='Search for users...'
             onChange={(val: string) =>setValue(val)}
             defaultValue={value}
+            dataTest="data-search-user"
           />
           <Button
             onClick={getData}
             disabled={!value}
+            dataTest="data-search-button"
           >
             Search
           </Button>
         </div>
-        {userDetail && 
-        <Card>
+        {userDetail &&
+        <Card dataTest="data-test-card">
           <div className="flex-justify-between">
             <div>
               <p>
@@ -53,7 +55,9 @@ const Home: FC = () => {
                 {userDetail.name}
               </span>
             </div>
-            <Link to="/user/detail" className="see-more">See more</Link>
+            <Link to="/user/detail" className="see-more">
+              <span data-testid="data-see-more">See more</span>
+            </Link>
           </div>
         </Card>}
 

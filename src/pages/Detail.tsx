@@ -21,9 +21,7 @@ const Detail: FC = () => {
   }
 
   useEffect(() => {
-    if(userDetail?.repos_url)  {
-      getData(userDetail.repos_url)
-    }
+    if(userDetail?.repos_url) getData(userDetail.repos_url)
   }, [userDetail])
 
   const repoList = repos?.map((repo: any) => <ListItem key={repo.id}><label>{repo.name}:</label><span>{repo.description || 'No description'}</span></ListItem>)

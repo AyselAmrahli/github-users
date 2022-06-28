@@ -6,7 +6,7 @@ export interface IAppRoute {
 }
 
 export interface IUser {
-  avatar_url: "https://avatars.githubusercontent.com/u/14097805?v=4"
+  avatar_url: string;
   bio: string;
   blog: string;
   company: string;
@@ -34,7 +34,7 @@ export interface IUser {
   site_admin: false
   starred_url: string;
   subscriptions_url: string;
-  twitter_username: string;
+  twitter_username: string | null;
   type: string;
   updated_at: string;
   url: string;
