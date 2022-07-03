@@ -5,7 +5,7 @@ import './index.scss';
 type IProps = {
 	placeholder?: string,
 	defaultValue?: string,
-	onChange: any,
+	onChange: (value: string) => void,
 	dataTest?: string;
 }
 
